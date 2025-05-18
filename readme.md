@@ -1,4 +1,4 @@
-# Offline Odysssey
+# Offline Odyssey
 
 An advanced PHP game site with a Leaderboard, Global Chat, and Data Management.
 
