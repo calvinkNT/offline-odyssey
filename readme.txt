@@ -1,3 +1,18 @@
+* This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license.
+
+* You are free to:
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material
+
+* Under the following terms:
+- Attribution — You must give appropriate credit.
+- NonCommercial — You may not use the material for commercial purposes.
+- ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license.
+
+* Read the full license here: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+~~~
+
 * This contains an explanation of how the whole thing works- from the functions of the token system , to the features that were never implemented.
 * You will need prior knowledge in how websites work. This will not be able to be hosted on static hosting services such as GitHub Pages, Codeberg Pages, AWS R2 Buckets, Google Sites, or other as it requires PHP.
 * It will be split into sections, and important filenames or other data will be capitalized.
