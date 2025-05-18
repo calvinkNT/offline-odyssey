@@ -1,15 +1,6 @@
-* This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license.
+Code (PHP, JavaScript, HTML) in this repository is licensed under the GNU General Public License v3.0.
 
-* You are free to:
-- Share — copy and redistribute the material in any medium or format
-- Adapt — remix, transform, and build upon the material
-
-* Under the following terms:
-- Attribution — You must give appropriate credit.
-- NonCommercial — You may not use the material for commercial purposes.
-- ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license.
-
-* Read the full license here: https://creativecommons.org/licenses/by-nc-sa/4.0/
+All non-code content (artwork, sound, written text, and design elements) that is NOT a game file or part of a game file is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).
 
 ~~~
 
