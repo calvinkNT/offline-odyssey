@@ -1,0 +1,23 @@
+<!---
+
+This is a demo for downloading HTM (school blocked local HTML files) file with the iFrame. This was never in use during the original site due to InfinityFree removing CORS customization for free accounts, so iFrames from different sources will be blocked.
+
+If you'd like to use this for your site, and CORS is able to be modified, then just replace the URL and modify this code to replace the "Open Portal" button with a "Download Portal" button.
+
+--->
+
+<a id="downloadLink" href="" download="portal.htm">Download Portal</a>
+
+<script>
+    document.getElementById('downloadLink').href = URL.createObjectURL(
+        new Blob([
+`<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<iframe src=\'https://jscdn.ct.ws/oo-pass/login.php/\' style=\'position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;\'></iframe>
+</body>
+</html>`
+        ], {type: "text/html"})
+    );
+</script>
