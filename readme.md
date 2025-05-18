@@ -1,9 +1,39 @@
-Code (PHP, JavaScript, HTML) in this repository is licensed under the GNU General Public License v3.0.
+# Offline Odysssey
 
-All non-code content (artwork, sound, written text, and design elements) that is NOT a game file or part of a game file is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).
+An advanced PHP game site with a Leaderboard, Global Chat, and Data Management.
 
-~~~
+## License
 
+This project uses a dual-license approach:
+
+- All **code** (PHP, JavaScript, HTML) is licensed under the **GNU General Public License v3.0**  
+  → https://www.gnu.org/licenses/gpl-3.0.html
+
+- All **non-code content** (artwork, written text, sound, and design assets) that is **not an asset of a game or game code** is licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License**  
+  → https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+### Summary of Your Rights:
+
+**You can:**
+- Use and modify the code as long as you keep it under GPLv3.
+- Share and remix non-code content non-commercially with credit and under the same license.
+
+**You cannot:**
+- Use non-code assets (like images, writing, sounds) for commercial purposes.
+- Re-license modified code under a different license.
+
+## Attribution
+
+If you use or modify this project, you must give credit to the original author(s).
+
+https://calvink19.co/offlineodyssey  
+Author: CalvinK19
+
+---
+
+For more legal details, see the full LICENSE file.
+
+```
 * This contains an explanation of how the whole thing works- from the functions of the token system , to the features that were never implemented.
 * You will need prior knowledge in how websites work. This will not be able to be hosted on static hosting services such as GitHub Pages, Codeberg Pages, AWS R2 Buckets, Google Sites, or other as it requires PHP.
 * It will be split into sections, and important filenames or other data will be capitalized.
@@ -287,3 +317,4 @@ Quick explanation of each file and its purpose:
 
 Thank you to moonkey, NeoXFlame, SilentWarriorK7, _ToL_, Nedi, and Zxygo.
 calvink19.co/offlineodyssey
+```
