@@ -1,6 +1,7 @@
 # Offline Odyssey
 
-An advanced PHP game site with a Leaderboard, Global Chat, and Data Management.
+An advanced PHP game site with a Leaderboard, Global Chat, and Data Management.  
+[Setup YouTube Tutorial](https://youtu.be/_Vfs6aw9OgM)
 
 ## License
 
