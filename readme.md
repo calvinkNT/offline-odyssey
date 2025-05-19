@@ -279,8 +279,8 @@ Quick explanation of each file and its purpose:
     To update the library:
     1. Download the Google Docs as a PDF, and rename it to "UGS.pdf". Copy it to a new folder on your Desktop called "update". This folder will be where all other code goes.
     2. Open the folder link (at the top of the doc) and download the folder as a ZIP file.
-    3. Create a new directory inside the "update" folder called "downloads".
-    4. Copy the downloaded games into /downloads.
+    3. Create a new directory inside the "update" folder called "games".
+    4. Copy the downloaded games into /games.
     5. Run "update.py" inside the "update" folder. It should rename all the game html files into Base64, and generate a new "games_data.json" file.
     6. Copy the renamed and updated game files into the website /dl directory.
     7. Replace "games_data.json" in the website directory.
