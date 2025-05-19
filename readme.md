@@ -30,8 +30,6 @@ If you use or modify this project, you must give credit to the original author(s
 https://calvink19.co/offlineodyssey  
 Author: CalvinK19
 
----
-
 For more legal details, see the full LICENSE file.
 
 ## Docs
