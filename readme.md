@@ -34,6 +34,8 @@ Author: CalvinK19
 
 For more legal details, see the full LICENSE file.
 
+## Docs
+
 ```
 * This contains an explanation of how the whole thing works- from the functions of the token system , to the features that were never implemented.
 * You will need prior knowledge in how websites work. This will not be able to be hosted on static hosting services such as GitHub Pages, Codeberg Pages, AWS R2 Buckets, Google Sites, or other as it requires PHP.
