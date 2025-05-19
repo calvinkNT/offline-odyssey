@@ -308,6 +308,7 @@ Quick explanation of each file and its purpose:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Thank you to moonkey, NeoXFlame, SilentWarriorK7, _ToL_, Nedi, and Zxygo.
+Thank you to moonkeyoo, NeoXFlame, SilentWarriorK7/RealEToHPlayer, _ToL_/_TofLixillion_, Nedi, and ZxygoAlt/GlueFur.
 calvink19.co/offlineodyssey
+
 ```
