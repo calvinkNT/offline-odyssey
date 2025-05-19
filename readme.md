@@ -129,15 +129,7 @@ Quick explanation of each file and its purpose:
     
     Whenever a page is visited, the token stored in the "auth_token" cookie is checked along with any file stored in TOKENS.JSON. If the cookie doesn't match, it errors out with "Invalid token" and redirects the user to the login portal. If the "auth_token" cookie expired or is not present, it errors out with "No token" and redirects the user to the login portal.
     
-    Whenever any user visits any page which requires a token (e.g. it loads in TB.PHP, the titlebar code), it checks the token.
-    
-    The whitelist system hooks off of the school's K# endpoints. I use 192.0.2.12/fbaLogout, the only one with CORS allowed for all origins (three others exist). I found them by poking through the "ckf[01-10].katyisd.org" blockpage code.
-    
-    System of events for whitelist:
-    
-    ALWAYS                               User loads page -> Checks for cookie "return" is stored
-    IF Cookie "return" is not stored     Contact endpoint -> Store response containing K# in cookie "return", expires in 5 days -> Reload page to validate against PHP
-    IF Cookie "return" is stored         Validate K# against existing list of allowed (or non-allowed) via PHP -> Load password-enter DIV or "you are not whitelisted" DIV depending on whitelist/blacklist status
+    Whenever any user visits any page which requires a token (e.g. it loads in TB.PHP, the titlebar code), it checks the token and deletes any other expired tokens.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
