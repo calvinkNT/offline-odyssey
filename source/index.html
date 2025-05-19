@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title> &#8204; </title>
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta name="robots" content="noindex">
+<meta name="darkreader-lock" content="" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://jscdn.ct.ws/../assets/css/bootstrap.css?id=2" rel="stylesheet">
+<link href="https://jscdn.ct.ws/../assets/css/bootstrap-responsive.css?id=2" rel="stylesheet">
+<link href="https://jscdn.ct.ws/../assets/css/darkstrap.css?id=2" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .message-container {
+      max-width: 600px;
+      padding: 20px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .message-container p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="message-container well" style="align-items:center;padding-bottom:10px;width:150px;">
+    <a class="btn btn-primary btn-block" id="open"><i class="icon-share-alt icon-white"></i> Open</a>
+  </div>
+
+</body>
+<script>
+    
+  document.getElementById("open").addEventListener("click", () => {
+      
+      var popup = window.open("about:blank");
+      popup.document.write(`
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/x-icon" href="https://jscdn.ct.ws/oo-pass/favicon.ico">
+<title> &#8204; </title>
+</head>
+<body>
+<iframe src="https://jscdn.ct.ws/oo-pass/login.php" style="top:0;left:0;right:0;bottom:0;position:fixed;border:none;width:100%;height:100%;frameBorder:0;"></iframe>
+</body>
+<script>
+window.onunload = function() {
+  document.cookie = "auth=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  document.cookie = "auth_token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+});
+</scr` + `ipt>
+</html>
+      `);
+      /*
+      // just in case the session cookies don't expire
+      var script = popup.document.createElement('title');
+      script.textContent = ` &#8204; `;
+      popup.document.body.appendChild(script);
+      
+      var popup = window.open("about:blank");
+      var iframe = popup.document.createElement("iframe");
+      iframe.src = "https://jscdn.ct.ws/oo-pass/login.php";
+      iframe.frameBorder = 0;
+      iframe.style.position = "fixed";
+      iframe.style.top = 0;
+      iframe.style.left = 0;
+      iframe.style.right = 0;
+      iframe.style.height = "100%";
+      iframe.style.width = "100%";
+      iframe.style.border = "none";
+      popup.document.body.appendChild(iframe);
+
+      // just in case the session cookies don't expire
+      var script = popup.document.createElement('script');
+      script.textContent = `
+        window.addEventListener('beforeunload', function() {
+          document.cookie = "auth=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+          document.cookie = "auth_token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        });
+      `;
+      popup.document.body.appendChild(script);*/
+
+      popup.document.close();
+
+      // Redirect main page
+      //window.location.href = "https://google.com";
+      history.back();
+  });
+  
+  
+document.getElementById('openhere').addEventListener('click', function() {
+
+  alert(`This is only good if you cannot open in the about:blank tab. If you are being monitored, instructors can see the URL.
+Nothing will go in your search history.`);
+    
+  // Remove all content from the body
+  document.body.innerHTML = '';
+
+  // Create a new iframe element
+  var iframe = document.createElement('iframe');
+  iframe.frameBorder = "0"; // Remove border
+  iframe.width = "100%"; // Set width to 100%
+  iframe.height = "100%"; // Set height to 100%
+  iframe.src = "https://jscdn.ct.ws/oo-pass/login.php"; // Replace with your desired URL
+
+  // Append the iframe to the body
+  document.body.appendChild(iframe);
+});
+
+window.addEventListener('beforeunload', function() {
+  document.cookie = "auth=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  document.cookie = "auth_token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+});
+
+</script>
+</html>
