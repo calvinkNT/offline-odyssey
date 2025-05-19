@@ -45,7 +45,7 @@
 </style>
 <div class="center-container">
 
-<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!---<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                       <div class="modal-body">
     <form id="game-form" actfion="https://docs.google.com/forms/d/e/1FAIpQLSeDP44I2Dba7O94gls7dcj8ZFLClJiyxyZuOdxuTyTOvFjVkQ/formResponse" method="POST">
       <fieldset>
@@ -73,8 +73,16 @@
       </fieldset>
     </form>
   </div>
-</div>
+</div>--->
 <div>
+
+<div style="text-align: center;">
+  <code style="display: block; margin: 0 auto; text-align: center;">
+    <span id="game-name"></span>
+  </code>
+</div>
+
+<br>
 
 <button onclick="document.getElementById('gamecontent').src=document.getElementById('gamecontent').src;" class="btn btn-info"><i class="icon-repeat icon-white"></i> Reload</button>
 <button onclick="openFullscreen();" class="btn btn-primary"><i class="icon-resize-full icon-white"></i> Fullscreen</button>
@@ -130,6 +138,7 @@
     }
 
   </style>
+
 <div class="well" style="width:100%;height:85vh;margin-bottom:-0px;position:relative;">
 <iframe onload="this.classList.add('iframe-loaded')" src="" id="gamecontent" style="width:100%;height:100%;border:0px;border-radius:4px;background: url('') no-repeat center 3rem;"></iframe>
   <div class="iframe-beforeload" style="position: absolute; width: 100%; top: 0; text-align: center; margin-top: 1rem;"><i class="icon-signal icon-white"></i>Loading...</div>
@@ -310,6 +319,28 @@ function openGameInAboutBlankTab() {
         console.error('Error modifying URL:', err);
     });
 }
+
+// Function to get the game title from the ID
+async function getGameTitle(id) {
+    const response = await fetch('games_data.json');
+    const data = await response.json();
+    const game = data.find(game => game.id === id);
+    return game ? game.name : 'Unknown Game';
+}
+
+async function init() {
+    const gameId = getQueryStringParameter('id'); // Get the 'id' from the query string
+
+    if (gameId) {
+        const gameTitle = await getGameTitle(gameId);
+        document.getElementById('game-name').innerHTML = gameTitle; // Update the span with the game title
+    } else {
+        // Handle the case when no ID is provided
+    }
+}
+
+init();
+
 </script>
 
 </div>
