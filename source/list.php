@@ -267,15 +267,6 @@ function renderRatingUnit($game) {
 <!---<div class="alert alert-danger">
   <b>Games are being blocked.</b> This is due to the way they are stored. I cannot control this. <b>I am currently working on archiving oo-pass that are still up</b>, so there will be <b>no chance of them getting blocked</b>. <b>If a game goes missing</b>, please let me know and I will try to reinstate it</b>. I am currently trying to add <b>Drive Survival, a newer <b>Shootout Reloaded</b> version, and Bloons</b>.
 </div>--->
-<div class="alert alert-warning">
-<b>Pending oo-pass</b>:
-<li>Janissary Battles</li>
-<li>Super Smash Flash 2</li>
-<li>Shootout Reloaded (updated)</li>
-<li>Bloons</li>
-<li>Mouse/Cursor Battles</li>
-<li>Sprinter</li>
-</div>
 
 <script>
 window.onload = function() {
