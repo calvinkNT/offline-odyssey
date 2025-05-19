@@ -4,7 +4,7 @@ import os
 import base64
 from bs4 import BeautifulSoup
 
-downloads_folder = "downloads"
+downloads_folder = "games"
 
 if "y" in input("Are the game HTML files in the /games directory? [y/n]\n> "):
     pass
@@ -35,7 +35,7 @@ else:
 
 # Paths
 pdf_path = "UGS.pdf"
-html_folder = "downloads"
+html_folder = "games"
 output_json = "games_data.json"
 
 games = []
