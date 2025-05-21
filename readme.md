@@ -37,6 +37,7 @@ For more legal details, see the full LICENSE file.
 2. Due to the games being rendered via JS instead of server-side via PHP, the `games_data.json` file is accessible through extensive network log searching. Rendering games via PHP would enable the use of the rating system and to have `games_data.json` blocked from external viewing through `.htaccess`.
 3. For whatever reason, tokens do NOT expire when the `about:blank` window is closed. This could be exploited for further access into the site.
 4. Leaderboard accounts can be registered with the same name with different capital/lowercase letters. Even though accounts are limited to 4-20 characters, A-z, 0-9, and allowed the `-` and `_` characters, accounts with different case names can be registed such as `calvink19` and `CalvinK19`. These would be treated as seperate accounts.
+5. Finding new games has to be implemented, a page with maybe "top games". Trying to find new things to play is hard, and offputs users.
 
 ## Docs
 
