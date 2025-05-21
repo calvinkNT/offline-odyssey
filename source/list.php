@@ -40,7 +40,7 @@ foreach ($ratings as $game => $game_data) {
     ];
 }
 
-// Sort oo-pass by avg_rating in descending order
+// Sort games by avg_rating in descending order
 usort($game_ratings, function($a, $b) {
     return $b['avg_rating'] <=> $a['avg_rating'];
 });
@@ -265,8 +265,17 @@ function renderRatingUnit($game) {
 </div>--->
 
 <!---<div class="alert alert-danger">
-  <b>Games are being blocked.</b> This is due to the way they are stored. I cannot control this. <b>I am currently working on archiving oo-pass that are still up</b>, so there will be <b>no chance of them getting blocked</b>. <b>If a game goes missing</b>, please let me know and I will try to reinstate it</b>. I am currently trying to add <b>Drive Survival, a newer <b>Shootout Reloaded</b> version, and Bloons</b>.
+  <b>Games are being blocked.</b> This is due to the way they are stored. I cannot control this. <b>I am currently working on archiving games that are still up</b>, so there will be <b>no chance of them getting blocked</b>. <b>If a game goes missing</b>, please let me know and I will try to reinstate it</b>. I am currently trying to add <b>Drive Survival, a newer <b>Shootout Reloaded</b> version, and Bloons</b>.
 </div>--->
+<div class="alert alert-warning">
+<b>Pending games</b>:
+<li>Janissary Battles</li>
+<li>Super Smash Flash 2</li>
+<li>Shootout Reloaded (updated)</li>
+<li>Bloons</li>
+<li>Mouse/Cursor Battles</li>
+<li>Sprinter</li>
+</div>
 
 <script>
 window.onload = function() {
@@ -290,7 +299,7 @@ function myFunction() {
         txtValue = a.textContent || a.innerText;
 
         // Get the rating for the current game
-        var rating = 0; // Default rating for oo-pass with no rating
+        var rating = 0; // Default rating for games with no rating
         for (var j = 0; j < gameRatings.length; j++) {
             if (gameRatings[j].game === txtValue) {
                 rating = gameRatings[j].avg_rating;
@@ -372,12 +381,12 @@ function myFunction() {
 
     <script>
     /*
-        fetch('oo-pass_data.json')
+        fetch('games_data.json')
             .then(response => response.json())
-            .then(oo-pass => {
+            .then(games => {
                 const gameListElement = document.getElementById('myUL');
 
-                oo-pass.forEach(game => {
+                games.forEach(game => {
                     const listItem = document.createElement('li');
                     listItem.classList.add('game-listing', 'span5');
 
@@ -403,13 +412,13 @@ function myFunction() {
                 console.error("Error loading the JSON data:", error);
             });
     */
-    fetch('https://jscdn.ct.ws/oo-pass/oo-pass_data.json')
+    fetch('https://jscdn.ct.ws/oo-pass/games_data.json')
         .then(response => response.json())
-        .then(oo-pass => {
+        .then(games => {
             const gameListElement = document.getElementById('myUL');
             const favorites = getCookies().favorites ? JSON.parse(getCookies().favorites) : [];
 
-            oo-pass.forEach(game => {
+            games.forEach(game => {
                 const listItem = document.createElement('li');
                 listItem.classList.add('game-listing', 'span5');
 
