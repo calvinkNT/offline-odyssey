@@ -21,7 +21,7 @@ session_start();
       <div class="masthead">
 <?php require_once($_SERVER["DOCUMENT_ROOT"] . '/oo-pass/tb.php'); ?>
       </div>
-      <a class="btn btn-inverse" type="button" href="leaderboard.php">&laquo; Back</a>
+      <a class="btn btn-inverse" type="button" href="lb.php">&laquo; Back</a>
 <?php
 
 // Load existing users
@@ -31,8 +31,8 @@ $usersData = file_exists($usersFile) ? json_decode(file_get_contents($usersFile)
 // Handle logout
 if (isset($_GET['action']) && $_GET['action'] === 'logout') {
     session_destroy();
-    echo "<script>window.location.href='https://jscdn.ct.ws/oo-pass/lb/leaderboard.php';</script>";
-    header("Location: https://jscdn.ct.ws/oo-pass/lb/leaderboard.php");
+    echo "<script>window.location.href='https://jscdn.ct.ws/oo-pass/lb/lb.php';</script>";
+    header("Location: https://jscdn.ct.ws/oo-pass/lb/lb.php");
     exit();
 }
 
@@ -112,8 +112,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_account'])) {
     // End the session and redirect the user
     session_destroy();
     echo "Your account has been deleted successfully.";
-    echo "<script>window.location.href='https://jscdn.ct.ws/oo-pass/lb/leaderboard.php';</script>";
-    header("Location: https://jscdn.ct.ws/oo-pass/lb/leaderboard.php");
+    echo "<script>window.location.href='https://jscdn.ct.ws/oo-pass/lb/lb.php';</script>";
+    header("Location: https://jscdn.ct.ws/oo-pass/lb/lb.php");
     exit();
 }
 
@@ -126,8 +126,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
     if (isset($usersData[$username]) && password_verify($password, $usersData[$username]['password'])) {
         // Successful login
         $_SESSION['username'] = $username;
-        echo "<script>window.location.href='https://jscdn.ct.ws/oo-pass/lb/leaderboard.php';</script>";
-        header("Location: leaderboard.php");
+        echo "<script>window.location.href='https://jscdn.ct.ws/oo-pass/lb/lb.php';</script>";
+        header("Location: lb.php");
         exit();
     } else {
         echo "Invalid username or password.";
