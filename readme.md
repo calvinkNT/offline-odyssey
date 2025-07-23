@@ -1,7 +1,7 @@
 # Offline Odyssey
 
-An advanced PHP game site with a Leaderboard, Global Chat, and Data Management.  
-[Setup YouTube Tutorial](https://youtu.be/_Vfs6aw9OgM) :: [Game Catalogue Update YouTube Tutorial](https://youtu.be/oRtXLeSlI2k)
+An advanced PHP game site with a leaderboard and global chat. It also includes base64 filename obfuscation and about:blank cloaking to make it harder for sysadmins to find.   
+[Setup Tutorial](https://youtu.be/_Vfs6aw9OgM) :: [Updating Catalogue Tutorial](https://youtu.be/oRtXLeSlI2k)
 
 ## License
 
@@ -28,7 +28,7 @@ This project uses a dual-license approach:
 If you use or modify this project, you must give credit to the original author(s).
 
 https://calvink19.co/offlineodyssey  
-Author: CalvinK19
+Author: calvink19
 
 For more legal details, see the full LICENSE file.
 
@@ -39,10 +39,16 @@ For more legal details, see the full LICENSE file.
 4. Leaderboard accounts can be registered with the same name with different capital/lowercase letters. Even though accounts are limited to 4-20 characters, A-z, 0-9, and allowed the `-` and `_` characters, accounts with different case names can be registed such as `calvink19` and `CalvinK19`. These would be treated as seperate accounts.
 5. Finding new games has to be implemented, a page with maybe "top games". Trying to find new things to play is hard, and offputs users.
 
+## Disclaimer
+
+I am **NOT RESPONSIBLE** for any actions that may happen because of this site. 
+
 ## Docs
 
+This documentation should help you get started if you wish to modify this site further.
+
 ```
-* This contains an explanation of how the whole thing works- from the functions of the token system , to the features that were never implemented.
+* This contains an explanation of how the whole thing works- from the functions of the token system to the features that were never implemented.
 * You will need prior knowledge in how websites work. This will not be able to be hosted on static hosting services such as GitHub Pages, Codeberg Pages, AWS R2 Buckets, Google Sites, or other as it requires PHP.
 * It will be split into sections, and important filenames or other data will be capitalized.
 * I wrote this all myself. I'm not quite good at writing documentation, so if you have any questions on what certain functions have please ask me. I'll then update the docs. However, this should give you a mostly complete understanding of how this site operates.
@@ -315,7 +321,7 @@ Quick explanation of each file and its purpose:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Thank you to moonkeyoo, NeoXFlame, SilentWarriorK7/RealEToHPlayer, _ToL_/_TofLixillion_, Nedi, and ZxygoAlt/GlueFur.
+Thank you to moonkey, NeoXFlame, SilentWarriorK7, _TofLixillion_, Nedi, ZxygoAlt, and the people behind the Ultmate Game Stash.
 calvink19.co/offlineodyssey
 
 ```
