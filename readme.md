@@ -1,6 +1,9 @@
 # Offline Odyssey
 
-An advanced PHP game site with a leaderboard and global chat. It also includes base64 filename obfuscation and about:blank cloaking to make it harder for sysadmins to find.   
+An advanced PHP game site with a leaderboard and global chat. It also includes base64 filename obfuscation and about:blank cloaking.   
+
+## USE RESPONSIBLY! I AM NOT HELD ACCOUNTABLE FOR ANY ACTIONS TAKEN BECAUSE OF THIS SITE. HOST AT YOUR OWN RISK.
+
 [Setup Tutorial](https://youtu.be/_Vfs6aw9OgM) :: [Updating Catalogue Tutorial](https://youtu.be/oRtXLeSlI2k)
 
 ## License
@@ -38,10 +41,6 @@ For more legal details, see the full LICENSE file.
 3. For whatever reason, tokens do NOT expire when the `about:blank` window is closed. This could be exploited for further access into the site.
 4. Leaderboard accounts can be registered with the same name with different capital/lowercase letters. Even though accounts are limited to 4-20 characters, A-z, 0-9, and allowed the `-` and `_` characters, accounts with different case names can be registed such as `calvink19` and `CalvinK19`. These would be treated as seperate accounts.
 5. Finding new games has to be implemented, a page with maybe "top games". Trying to find new things to play is hard, and offputs users.
-
-## Disclaimer
-
-I am **NOT RESPONSIBLE** for any actions that may happen because of this site. 
 
 ## Docs
 
