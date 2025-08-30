@@ -24,9 +24,9 @@ for filename in os.listdir(downloads_folder):
 
         # Rename file
         os.rename(original_path, new_path)
-        print(f"✅ Renamed: {filename} → {new_filename}")
+        print(f"Renamed: {filename} → {new_filename}")
 
-print("🎉 All files renamed using URL-safe Base64.")
+print("All files renamed.")
 
 if "y" in input("Is the Ultimate Game Stash PDF in this directory and renamed as UGS.pdf? [y/n]\n> "):
     pass
@@ -77,6 +77,7 @@ with fitz.open(pdf_path) as doc:
 with open(output_json, 'w', encoding='utf-8') as f:
     json.dump(games, f, indent=4)
 
-print(f"✅ Done! Extracted {len(games)} entries to {output_json} using URL-safe Base64 IDs.")
+print(f"Done! Extracted {len(games)} entries to {output_json}.")
 from time import sleep
 sleep(9999)
+
