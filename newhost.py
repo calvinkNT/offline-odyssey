@@ -1,7 +1,5 @@
 import os
 
-
-
 # Function to rename the URL in the file
 def rename_url_in_file(file_path, old_url, new_url):
     try:
@@ -32,8 +30,7 @@ def traverse_and_rename(directory, old_url, new_url):
 
 if "1" in input("Are you first-time setup [1] or moving domains/paths [2]?\n> ").lower():
 
-	# Folder to start the renaming process
-	folder_path = "./source"  # Replace with your folder path
+	folder_path = "./source" 
 	old_url = "oo-pass"
 	new_url = input("What is the directory you will host on? (e.g. example.com/oo, you enter 'oo'\n> ")
 
@@ -41,8 +38,7 @@ if "1" in input("Are you first-time setup [1] or moving domains/paths [2]?\n> ")
 	
 	print("Updated directory")
 
-	# Folder to start the renaming process
-	folder_path = "./source"  # Replace with your folder path
+	folder_path = "./source" 
 	old_url = "jscdn.ct.ws"
 	new_url = input("What is the domain you will host on? (e.g. https://example.com, you enter 'example.com'\n> ")
 
@@ -55,8 +51,7 @@ else:
 
 	print("* Make sure to copy down the whole website files (minus the assets folder) and rename it 'source' in this directory.")
 
-	# Folder to start the renaming process
-	folder_path = "./source"  # Replace with your folder path
+	folder_path = "./source" 
 	old_url = input("What is the OLD directory you were hosting on? (e.g. example.com/oo, you enter 'oo'\n> ")
 	new_url = input("What is the directory you will host on/want to move? (e.g. example.com/oo, you enter 'oo'\n> ")
 
@@ -64,8 +59,7 @@ else:
 	
 	print("Updated directory")
 
-	# Folder to start the renaming process
-	folder_path = "./source"  # Replace with your folder path
+	folder_path = "./source" 
 	old_url = input("What is the OLD domain you were hosting on? (e.g. example.com/oo, you enter 'oo'\n> ")
 	new_url = input("What is the domain you will host on? (e.g. https://example.com, you enter 'example.com'\n> ")
 
@@ -73,6 +67,3 @@ else:
 	
 	print("Updated domain.")
 print("Finished execution. You are safe to exit.")
-
-from time import sleep
-sleep(9999)
